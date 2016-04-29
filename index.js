@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-zesty-pack'
+  name: 'ember-zesty-shared-base'
 };

@@ -1,5 +1,5 @@
 {
-  "name": "ember-zesty-pack",
+  "name": "ember-zesty-shared-base",
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
