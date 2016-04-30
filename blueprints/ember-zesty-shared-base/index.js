@@ -24,6 +24,7 @@ module.exports = {
       { name: 'ember-cli-eslint' },
       { name: 'ember-cli-template-lint' }
     ]).then(function() {
+      safeUnlinkSync(path.join(project.root, '.travis.yml'));
       safeUnlinkSync(path.join(project.root, '.jscsrc'));
       safeUnlinkSync(path.join(project.root, '.jshintrc'));
       safeUnlinkSync(path.join(project.root, 'tests/.jscsrc'));
