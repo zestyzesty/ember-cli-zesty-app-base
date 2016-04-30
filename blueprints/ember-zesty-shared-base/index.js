@@ -29,9 +29,10 @@ module.exports = {
       safeUnlinkSync(path.join(project.root, 'tests/.jshintrc'));
       safeUnlinkSync(path.join(project.root, '.jscsrc'));
       safeUnlinkSync(path.join(project.root, '.jscsrc'));
+
       return blueprint.removePackagesFromProject([
-        'ember-cli-jshint',
-        'ember-suave'
+        { name: 'ember-cli-jshint' },
+        { name: 'ember-suave' }
       ]);
       return blueprint.removePackageFromProject('ember-cli-jshint');
     }).then(function() {
