@@ -15,13 +15,24 @@ module.exports = {
 
   afterInstall: function() {
     var blueprint = this;
-    var project = this.project
+    var project = this.project;
+
+    this.insertIntoFile('ember-cli-build.js', [
+      '',
+      '    babel: {',
+      '      includePolyfill: true,',
+      '    }',
+      ''
+    ].join('\n'), {
+      after: '// Add options here\n'
+    });
 
     return blueprint.addPackagesToProject([
       { name: 'ember-cli-deploy' },
       { name: 'ember-cli-envy' },
       { name: 'ember-cli-eslint' },
       { name: 'ember-cli-template-lint' },
+      { name: 'ember-concurrency' },
       { name: 'ember-test-selectors' }
     ]).then(function() {
       safeUnlinkSync(path.join(project.root, '.jshintrc'));
