@@ -2,6 +2,18 @@
 
 This README outlines the details of collaborating on this Ember addon.
 
+To install (or upgrade) into a Zesty app
+
+```
+ember install zestyzesty/ember-cli-zesty-app-base#{tag}
+```
+
+For example
+
+```
+ember install zestyzesty/ember-cli-zesty-app-base#v0.2.2
+```
+
 ## Installation
 
 * `git clone` this repository
