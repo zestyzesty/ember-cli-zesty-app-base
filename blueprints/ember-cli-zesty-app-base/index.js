@@ -20,9 +20,8 @@ module.exports = {
     this.insertIntoFile('ember-cli-build.js', [
       '',
       '    babel: {',
-      '      includePolyfill: true,',
-      '    }',
-      ''
+      '      includePolyfill: true',
+      '    }'
     ].join('\n'), {
       after: '// Add options here\n'
     });
