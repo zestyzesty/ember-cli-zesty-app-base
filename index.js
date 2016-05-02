@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-zesty-shared-base'
+  name: 'ember-cli-zesty-app-base'
 };

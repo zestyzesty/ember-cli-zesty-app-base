@@ -1,4 +1,4 @@
-# Zesty Shared Base
+# Zesty App Base
 
 This README outlines the details of collaborating on this Ember addon.
 

@@ -1,1 +1,1 @@
-export { default, initialize } from 'ember-zesty-shared-base/initializers/setup-jquery-ajax';
+export { default, initialize } from 'ember-cli-zesty-app-base/initializers/setup-jquery-ajax';
