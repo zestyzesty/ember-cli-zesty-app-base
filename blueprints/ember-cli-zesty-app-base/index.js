@@ -28,6 +28,7 @@ module.exports = {
     });
 
     return blueprint.addPackagesToProject([
+      { name: 'babel-eslint' },
       { name: 'ember-cli-deploy' },
       { name: 'ember-cli-envy' },
       { name: 'ember-cli-eslint' },
