@@ -1,5 +1,7 @@
 # Zesty App Base
 
+[![CircleCI](https://circleci.com/gh/zestyzesty/ember-cli-zesty-app-base.svg?style=shield&circle-token=99d1d0d30c4cece3f790a8b09298738be7f3635f)](https://circleci.com/gh/zestyzesty/ember-cli-zesty-app-base)
+
 This README outlines the details of collaborating on this Ember addon.
 
 To install (or upgrade) into a Zesty app
