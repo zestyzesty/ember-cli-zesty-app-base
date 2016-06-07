@@ -27,13 +27,13 @@ module.exports = {
     });
 
     return blueprint.addPackagesToProject([
-      { name: 'babel-eslint' },
-      { name: 'ember-cli-deploy' },
-      { name: 'ember-cli-envy' },
-      { name: 'ember-cli-eslint' },
-      { name: 'ember-cli-template-lint' },
-      { name: 'ember-concurrency' },
-      { name: 'ember-test-selectors' }
+      { name: 'babel-eslint', target: '^6.0.4'},
+      { name: 'ember-cli-deploy', target: '^0.6.2'},
+      { name: 'ember-cli-envy', target: '^2.0.0'},
+      { name: 'ember-cli-eslint', target: '^1.4.0'},
+      { name: 'ember-cli-template-lint', target: '^0.4.10'},
+      { name: 'ember-concurrency', target: '^0.7.1'},
+      { name: 'ember-test-selectors', target: '^0.0.3'}
     ]).then(function() {
       safeUnlinkSync(path.join(project.root, '.jshintrc'));
       safeUnlinkSync(path.join(project.root, '.jscsrc'));
