@@ -33,6 +33,7 @@ module.exports = {
       safeUnlinkSync(path.join(project.root, '.jscsrc'));
 
       return blueprint.removePackagesFromProject([
+        { name: 'ember-ajax' },
         { name: 'ember-cli-jshint' },
         { name: 'ember-suave' }
       ]);
