@@ -29,8 +29,7 @@ module.exports = {
       safeUnlinkSync(path.join(project.root, '.jshintrc'));
       safeUnlinkSync(path.join(project.root, '.jscsrc'));
       safeUnlinkSync(path.join(project.root, 'tests/.jshintrc'));
-      safeUnlinkSync(path.join(project.root, '.jscsrc'));
-      safeUnlinkSync(path.join(project.root, '.jscsrc'));
+      safeUnlinkSync(path.join(project.root, '.travis.yml'));
 
       return blueprint.removePackagesFromProject([
         { name: 'ember-ajax' },
