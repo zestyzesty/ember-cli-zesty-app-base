@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export function initialize() {
   Ember.$.ajaxSetup({
+    // Set the default Content-Type header to JSON
+    contentType: 'application/json',
+
     // Treat all responses as JSON and set the Accept header
     dataType: 'json',
 
