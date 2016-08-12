@@ -19,14 +19,14 @@ module.exports = {
 
     return blueprint.addAddonsToProject({
       packages: [
-        { name: 'ember-cli-eslint', target: '^1.6.0' },
-        { name: 'ember-cli-template-lint', target: '^0.4.11' },
+        { name: 'ember-cli-eslint', target: '^1.7.0' },
+        { name: 'ember-cli-template-lint', target: '^0.4.12' },
         { name: 'ember-concurrency', target: '^0.7.8' },
         { name: 'ember-test-selectors', target: '^0.0.3' }
       ]
     }).then(function() {
       return blueprint.addPackagesToProject([
-        { name: 'babel-eslint', target: '^6.1.0' },
+        { name: 'babel-eslint', target: '^6.1.2' },
         { name: 'ember-cli-deploy', target: '^0.6.4' },
       ])
     }).then(function() {
