@@ -19,6 +19,7 @@ ember install zestyzesty/ember-cli-zesty-app-base#v0.2.2
 The addon blueprint will then set up the project structure for a Zesty project (this won't be run automatically).
 
 ```
+ember g ember-cli-zesty-app-base
 ```
 
 ## Running
