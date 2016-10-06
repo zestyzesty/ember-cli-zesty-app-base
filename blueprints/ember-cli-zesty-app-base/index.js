@@ -22,7 +22,8 @@ module.exports = {
         { name: 'ember-cli-eslint', target: '^1.7.0' },
         { name: 'ember-cli-template-lint', target: '^0.4.12' },
         { name: 'ember-concurrency', target: '^0.7.8' },
-        { name: 'ember-test-selectors', target: '^0.0.3' }
+        { name: 'ember-test-selectors', target: '^0.0.3' },
+        { name: 'ember-cli-sass', target: '^5.5.0' }
       ]
     }).then(function() {
       return blueprint.addPackagesToProject([
