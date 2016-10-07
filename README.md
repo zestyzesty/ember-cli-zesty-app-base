@@ -1,6 +1,7 @@
 # Zesty App Base
 
 [![CircleCI](https://circleci.com/gh/zestyzesty/ember-cli-zesty-app-base.svg?style=shield&circle-token=99d1d0d30c4cece3f790a8b09298738be7f3635f)](https://circleci.com/gh/zestyzesty/ember-cli-zesty-app-base)
+[![npm version](https://badge.fury.io/js/ember-cli-zesty-app-base.svg)](https://www.npmjs.com/package/ember-cli-zesty-app-base)
 
 A base pack of addons and config files for standard Zesty projects.
 
