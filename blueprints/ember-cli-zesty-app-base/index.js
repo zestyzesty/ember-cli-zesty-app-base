@@ -43,7 +43,8 @@ module.exports = {
       return blueprint.removePackagesFromProject([
         { name: 'ember-ajax' },
         { name: 'ember-cli-jshint' },
-        { name: 'ember-suave' }
+        { name: 'ember-suave' },
+        { name: 'ember-welcome-page' }
       ]);
     }).then(function() {
       return blueprint.addAddonToProject('ember-cli-deploy-zesty-pack');
