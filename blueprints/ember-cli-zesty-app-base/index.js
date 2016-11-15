@@ -22,7 +22,7 @@ module.exports = {
       packages: [
         { name: 'ember-cli-eslint', target: '^2.0.0' },
         { name: 'ember-cli-template-lint', target: '^0.4.12' },
-        { name: 'ember-concurrency', target: '^0.7.8' },
+        { name: 'ember-concurrency', target: '^0.7.15' },
         { name: 'ember-test-selectors', target: '^0.0.3' },
         { name: 'ember-cli-sass', target: '^5.5.0' }
       ],
