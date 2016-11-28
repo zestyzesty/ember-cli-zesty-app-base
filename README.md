@@ -8,12 +8,10 @@ A base pack of addons and config files for standard Zesty projects.
 To install or upgrade into a Zesty app run `ember install`, with the desired version number.
 
 ```
-ember install ember-cli-zesty-app-base@0.2.13
-```
-
-The addon blueprint will then set up the project structure for a Zesty project. If you want to
-rerun the generator hit:
-
-```
+yarn upgrade ember-cli-zesty-app-base
 ember generate ember-cli-zesty-app-base
 ```
+
+Avoid using `ember install` as it will lock the app base to a specific version rather than a range.
+
+Note that when you're upgrading you will probs need to run generators for individual packages, e.g. see https://github.com/zestyzesty/ember-cli-deploy-zesty-pack for specific instructions.
