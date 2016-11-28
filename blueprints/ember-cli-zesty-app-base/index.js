@@ -41,7 +41,8 @@ module.exports = {
         { name: 'ember-ajax' },
         { name: 'ember-suave' },
         { name: 'ember-welcome-page' },
-        { name: 'babel-eslint' }
+        { name: 'babel-eslint' },
+        { name: 'ember-cli-envy' }
       ]);
     }).then(function() {
       return blueprint.addAddonToProject('ember-cli-deploy-zesty-pack');
