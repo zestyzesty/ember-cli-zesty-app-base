@@ -18,34 +18,23 @@ module.exports = {
     var blueprint = this;
     var project = this.project;
 
+    // Note that the order of these packages determines the order that their blueprints are run.
     return blueprint.addAddonsToProject({
       packages: [
-        { name: 'ember-cli-eslint', target: '^2.0.0' },
-        { name: 'ember-cli-template-lint', target: '^0.4.12' },
-        { name: 'ember-concurrency', target: '^0.7.15' },
-        { name: 'ember-test-selectors', target: '^0.0.3' },
-        { name: 'ember-cli-sass', target: '^5.5.0' }
-      ],
-      blueprintOptions: {
-        saveDev: true
-      }
+        { name: 'ember-cli-deploy' },
+        { name: 'ember-cli-deploy-zesty-pack' }, // Must run after ember-cli-deploy's blueprint.
+        { name: 'ember-cli-sass' },
+        { name: 'ember-cli-template-lint' },
+        { name: 'ember-concurrency' },
+        { name: 'ember-test-selectors' }
+      ]
     }).then(function() {
-      return blueprint.addPackagesToProject([
-        { name: 'ember-cli-deploy', target: '^0.6.4' }
-      ])
-    }).then(function() {
-      safeUnlinkSync(path.join(project.root, '.jscsrc'));
       safeUnlinkSync(path.join(project.root, '.travis.yml'));
 
       return blueprint.removePackagesFromProject([
         { name: 'ember-ajax' },
-        { name: 'ember-suave' },
         { name: 'ember-welcome-page' },
-        { name: 'babel-eslint' },
-        { name: 'ember-cli-envy' }
       ]);
-    }).then(function() {
-      return blueprint.addAddonToProject('ember-cli-deploy-zesty-pack');
     });
   }
 };
